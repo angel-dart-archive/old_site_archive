@@ -1,0 +1,36 @@
+<material-sidenav [(open)]="open">
+    <div id="menu">
+        <material-toolbar background="transparent" icon="cloud" title="Angel"></material-toolbar>
+        <menu-item [routerLink]="['Home']" icon="home">
+            Home
+        </menu-item>
+        <menu-item icon="info_outline">
+            About
+        </menu-item>
+        <menu-separator></menu-separator>
+        <menu-item icon="airplanemode_active">
+            Getting Started
+        </menu-item>
+        <menu-item (click)="goTo('https://github.com/angel-dart/angel/wiki')"
+            icon="people">
+            Wiki
+        </menu-item>
+        <menu-item (click)="goTo('https://www.dartdocs.org/documentation/angel_common/latest')"
+            icon="home">
+            API Documentation
+        </menu-item>
+        <menu-separator></menu-separator>
+        <menu-item (click)="goTo('https://github.com/angel-dart')"
+            icon="code">
+            View on Github
+        </menu-item>
+        <menu-item (click)="goTo('https://github.com/angel-dart/roadmap/issues')"
+            icon="report_problem">
+            File an Issue
+        </menu-item>
+    </div>
+</material-sidenav>
+<material-toolbar id="toolbar" (click)="open = !open" [title]="title"
+    icon="menu" background="transparent">
+</material-toolbar>
+<router-outlet></router-outlet>
