@@ -11,7 +11,7 @@
         <menu-item icon="flight">
             Getting Started
         </menu-item>
-        <menu-item icon="school">
+        <menu-item (click)="goTo('https://github.com/angel-example')" icon="school">
             Examples
         </menu-item>
         <menu-item (click)="goTo('https://github.com/angel-dart/angel/wiki')"
@@ -33,7 +33,7 @@
         </menu-item>
     </div>
 </material-sidenav>
-<material-toolbar id="toolbar" (click)="open = !open" [title]="title"
+<material-toolbar (click)="open = !open" [title]="title"
     icon="menu" background="transparent">
 </material-toolbar>
 <router-outlet></router-outlet>

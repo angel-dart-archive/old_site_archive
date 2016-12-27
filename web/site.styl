@@ -1,12 +1,21 @@
 @import './styles/colors'
+@import './code'
 
 html, body
-    background-color: $light
-    font-family: Roboto, sans-serif;
-    margin: 0;
+    background-color $light
+    font-family Roboto, sans-serif;
+    margin 0;
 
-#page-content
-    color: $dark
+.centered
+    text-align center
+
+.image-container
+    padding-left 1em
+    padding-right 1em
+
+.page-content
+    color $dark
+    padding 1em
     
     .vertical
         margin-bottom: 0

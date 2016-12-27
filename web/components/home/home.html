@@ -1,3 +1,18 @@
-<pre>
-    <code #code class="bash">echo eval $PATH angel init</code>
-</pre>
+<div class="page-content centered">
+    <div class="image-container">
+        <img src="images/logo.png">
+    </div>
+    <h2>The Dart server framework that's ready for <b>showtime.</b></h2>
+    <pre>    
+        <code #code class="dart">
+main() {
+  var app = new Angel()
+    ..get('/', (req, res) async {
+      return 'Hello, world!';
+    });
+}
+        </code>
+    </pre>
+    <br>
+    <material-button>Get Started</material-button>
+</div>

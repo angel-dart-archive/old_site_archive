@@ -12,93 +12,93 @@ import "dart:html" show Node;
 // Module highlight.js
 
 // Module hljs
-@JS("highlight.js.hljs.LANGUAGES")
+@JS("hljs.LANGUAGES")
 external dynamic /*JSMap of <String,dynamic>*/ get LANGUAGES;
-@JS("highlight.js.hljs.LANGUAGES")
+@JS("hljs.LANGUAGES")
 external set LANGUAGES(dynamic /*JSMap of <String,dynamic>*/ v);
-@JS("highlight.js.hljs.blockText")
+@JS("hljs.blockText")
 external String blockText(Node block, bool ignoreNewLines);
-@JS("highlight.js.hljs.blockLanguage")
+@JS("hljs.blockLanguage")
 external String blockLanguage(Node block);
-@JS("highlight.js.hljs.highlight")
+@JS("hljs.highlight")
 external IHighlightResult highlight(String language_name, String value);
-@JS("highlight.js.hljs.highlightAuto")
+@JS("hljs.highlightAuto")
 external IHighlightResult highlightAuto(String text);
-@JS("highlight.js.hljs.fixMarkup")
+@JS("hljs.fixMarkup")
 external String fixMarkup(String value, bool tabReplace, bool useBR);
-@JS("highlight.js.hljs.highlightBlock")
+@JS("hljs.highlightBlock")
 external void highlightBlock(Node block, [bool tabReplace, bool useBR]);
-@JS("highlight.js.hljs.initHighlighting")
+@JS("hljs.initHighlighting")
 external void initHighlighting();
-@JS("highlight.js.hljs.initHighlightingOnLoad")
+@JS("hljs.initHighlightingOnLoad")
 external void initHighlightingOnLoad();
-@JS("highlight.js.hljs.tabReplace")
+@JS("hljs.tabReplace")
 external String get tabReplace;
-@JS("highlight.js.hljs.tabReplace")
+@JS("hljs.tabReplace")
 external set tabReplace(String v);
 
 /// Common regexps
-@JS("highlight.js.hljs.IDENT_RE")
+@JS("hljs.IDENT_RE")
 external String get IDENT_RE;
-@JS("highlight.js.hljs.IDENT_RE")
+@JS("hljs.IDENT_RE")
 external set IDENT_RE(String v);
-@JS("highlight.js.hljs.UNDERSCORE_IDENT_RE")
+@JS("hljs.UNDERSCORE_IDENT_RE")
 external String get UNDERSCORE_IDENT_RE;
-@JS("highlight.js.hljs.UNDERSCORE_IDENT_RE")
+@JS("hljs.UNDERSCORE_IDENT_RE")
 external set UNDERSCORE_IDENT_RE(String v);
-@JS("highlight.js.hljs.NUMBER_RE")
+@JS("hljs.NUMBER_RE")
 external String get NUMBER_RE;
-@JS("highlight.js.hljs.NUMBER_RE")
+@JS("hljs.NUMBER_RE")
 external set NUMBER_RE(String v);
-@JS("highlight.js.hljs.C_NUMBER_RE")
+@JS("hljs.C_NUMBER_RE")
 external String get C_NUMBER_RE;
-@JS("highlight.js.hljs.C_NUMBER_RE")
+@JS("hljs.C_NUMBER_RE")
 external set C_NUMBER_RE(String v);
-@JS("highlight.js.hljs.BINARY_NUMBER_RE")
+@JS("hljs.BINARY_NUMBER_RE")
 external String get BINARY_NUMBER_RE;
-@JS("highlight.js.hljs.BINARY_NUMBER_RE")
+@JS("hljs.BINARY_NUMBER_RE")
 external set BINARY_NUMBER_RE(String v);
-@JS("highlight.js.hljs.RE_STARTERS_RE")
+@JS("hljs.RE_STARTERS_RE")
 external String get RE_STARTERS_RE;
-@JS("highlight.js.hljs.RE_STARTERS_RE")
+@JS("hljs.RE_STARTERS_RE")
 external set RE_STARTERS_RE(String v);
 
 /// Common modes
-@JS("highlight.js.hljs.BACKSLASH_ESCAPE")
+@JS("hljs.BACKSLASH_ESCAPE")
 external IMode get BACKSLASH_ESCAPE;
-@JS("highlight.js.hljs.BACKSLASH_ESCAPE")
+@JS("hljs.BACKSLASH_ESCAPE")
 external set BACKSLASH_ESCAPE(IMode v);
-@JS("highlight.js.hljs.APOS_STRING_MODE")
+@JS("hljs.APOS_STRING_MODE")
 external IMode get APOS_STRING_MODE;
-@JS("highlight.js.hljs.APOS_STRING_MODE")
+@JS("hljs.APOS_STRING_MODE")
 external set APOS_STRING_MODE(IMode v);
-@JS("highlight.js.hljs.QUOTE_STRING_MODE")
+@JS("hljs.QUOTE_STRING_MODE")
 external IMode get QUOTE_STRING_MODE;
-@JS("highlight.js.hljs.QUOTE_STRING_MODE")
+@JS("hljs.QUOTE_STRING_MODE")
 external set QUOTE_STRING_MODE(IMode v);
-@JS("highlight.js.hljs.C_LINE_COMMENT_MODE")
+@JS("hljs.C_LINE_COMMENT_MODE")
 external IMode get C_LINE_COMMENT_MODE;
-@JS("highlight.js.hljs.C_LINE_COMMENT_MODE")
+@JS("hljs.C_LINE_COMMENT_MODE")
 external set C_LINE_COMMENT_MODE(IMode v);
-@JS("highlight.js.hljs.C_BLOCK_COMMENT_MODE")
+@JS("hljs.C_BLOCK_COMMENT_MODE")
 external IMode get C_BLOCK_COMMENT_MODE;
-@JS("highlight.js.hljs.C_BLOCK_COMMENT_MODE")
+@JS("hljs.C_BLOCK_COMMENT_MODE")
 external set C_BLOCK_COMMENT_MODE(IMode v);
-@JS("highlight.js.hljs.HASH_COMMENT_MODE")
+@JS("hljs.HASH_COMMENT_MODE")
 external IMode get HASH_COMMENT_MODE;
-@JS("highlight.js.hljs.HASH_COMMENT_MODE")
+@JS("hljs.HASH_COMMENT_MODE")
 external set HASH_COMMENT_MODE(IMode v);
-@JS("highlight.js.hljs.NUMBER_MODE")
+@JS("hljs.NUMBER_MODE")
 external IMode get NUMBER_MODE;
-@JS("highlight.js.hljs.NUMBER_MODE")
+@JS("hljs.NUMBER_MODE")
 external set NUMBER_MODE(IMode v);
-@JS("highlight.js.hljs.C_NUMBER_MODE")
+@JS("hljs.C_NUMBER_MODE")
 external IMode get C_NUMBER_MODE;
-@JS("highlight.js.hljs.C_NUMBER_MODE")
+@JS("hljs.C_NUMBER_MODE")
 external set C_NUMBER_MODE(IMode v);
-@JS("highlight.js.hljs.BINARY_NUMBER_MODE")
+@JS("hljs.BINARY_NUMBER_MODE")
 external IMode get BINARY_NUMBER_MODE;
-@JS("highlight.js.hljs.BINARY_NUMBER_MODE")
+@JS("hljs.BINARY_NUMBER_MODE")
 external set BINARY_NUMBER_MODE(IMode v);
 
 @anonymous
