@@ -8,7 +8,7 @@ import '../../services/title.dart';
     selector: 'project-home',
     templateUrl: 'home.html',
     styleUrls: const ['home.css'],
-    directives: const [materialDirectives])
+    directives: const [materialDirectives, ROUTER_DIRECTIVES])
 class HomeComponent implements OnActivate, OnInit {
   final TitleService _titleService;
 

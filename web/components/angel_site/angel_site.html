@@ -4,11 +4,11 @@
         <menu-item [routerLink]="['Home']" icon="home">
             Home
         </menu-item>
-        <menu-item icon="info_outline">
+        <menu-item [routerLink]="['About']" icon="info_outline">
             About
         </menu-item>
         <menu-separator></menu-separator>
-        <menu-item icon="flight">
+        <menu-item [routerLink]="['Get-Started']" icon="flight">
             Getting Started
         </menu-item>
         <menu-item (click)="goTo('https://github.com/angel-example')" icon="school">
@@ -33,7 +33,6 @@
         </menu-item>
     </div>
 </material-sidenav>
-<material-toolbar (click)="open = !open" [title]="title"
-    icon="menu" background="transparent">
+<material-toolbar (click)="handleIconClick()" [title]="title" [icon]="icon" background="transparent">
 </material-toolbar>
 <router-outlet></router-outlet>

@@ -5,11 +5,14 @@ import 'package:angular2/angular2.dart';
 class TitleService {
   String _title = 'The Angel Framework';
 
-  String get title => _title;
+  bool get isHome => _title == null;
+
+  String get title => _title ?? 'The Angel Framework';
 
   void set title(String value) {
     if (value == null) {
-      document.title = _title = 'The Angel Framework';
+      _title = null;
+      document.title = title;
     } else
       document.title = '${_title = value} - Angel';
   }

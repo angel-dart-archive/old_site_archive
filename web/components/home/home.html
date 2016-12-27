@@ -4,7 +4,7 @@
     </div>
     <h2>The Dart server framework that's ready for <b>showtime.</b></h2>
     <pre>    
-        <code #code class="dart">
+        <code #code class="dart" style="margin: auto; max-width: 28em;">
 main() {
   var app = new Angel()
     ..get('/', (req, res) async {
@@ -14,5 +14,5 @@ main() {
         </code>
     </pre>
     <br>
-    <material-button>Get Started</material-button>
+    <material-button [routerLink]="['/Get-Started']" raised>Get Started</material-button>
 </div>
